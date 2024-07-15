@@ -4,21 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css">
-    <title>dJ - dApp Jockey</title>
+    <title>s_plit sign_al</title>
   </head>
   <body>
     <div id="app">
-      <video id="background-video" autoplay loop muted crossorigin="anonymous">
+      <video id="background-video" autoplay loop muted crossorigin="anonymous" preload="auto">
         <source src="src/assets/bg-main.mp4" type="video/mp4">
       </video>
       <div class="content">
-          <h2>In Aeterna</h2>
-          <p>Things in thoughts and dreams...</p>
+        <div id="sectionA">
+          <h2>In Æterna</h2>
+          <p id="para">Things in thoughts and dreams...</p>
+        </div>
+        <div id="sectionB">
+          <h2>SoundCloud</h2>
+          <div>
+            <iframe width="320px" height="320px" scrolling="no" frameborder="0" allow="autoplay" align="" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/9803281&color=%23848c94&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          </div>
+        </div>
+        <div id="sectionC">
+          <h2>MixCloud</h2>
+          <p></p>
+          <iframe width="320px" height="320px" src="https://player-widget.mixcloud.com/widget/iframe/?light=1&feed=%2FCountGeiger%2Fdub-mix-vol-1-731%2F" frameborder="0" ></iframe>
+        </div>  
       </div>
-      <div>
-        <img width="320px" height="320px" src="https://i1.sndcdn.com/artworks-000004471296-lamcc7-t500x500.jpg">
-      </div>
+      <audio hidden preload="auto" src="/src/assets//ambience.mp3"></audio>
     </div>
+    <script type="audio" src="src/background-audio.ts"></script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
